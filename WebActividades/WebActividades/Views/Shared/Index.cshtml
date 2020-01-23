@@ -1,0 +1,88 @@
+﻿@model IEnumerable<WebActividades.Models.Actividad>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Actividades</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Institucion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Creador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duracion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Materiales)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resumen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pautas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Naps)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Institucion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Materiales)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resumen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pautas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naps)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
