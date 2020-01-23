@@ -35,3 +35,12 @@ body {
         display: none;
     }
 }
+table{
+width:100%;
+border: 1px solid #000;
+}
+th,td, tr{
+width:25%;
+text-align: left;
+vertical-align: top;
+}
