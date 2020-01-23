@@ -12,7 +12,7 @@ namespace WebActividades.Controllers
 	{
 		public IActionResult Index()
 		{
-			List<Actividad> actividades = new List<Actividad>();
+			/*List<Actividad> actividades = new List<Actividad>();
 			Actividad actividad1 = new Actividad();
 			actividad1.Area = "Educación";
 			actividad1.Creador = "Juan Pérez";
@@ -37,13 +37,12 @@ namespace WebActividades.Controllers
 			actividad2.Naps = "idk";
 			actividades.Add(actividad1);
 			actividades.Add(actividad2);
-			return View(actividades);
+			return View(actividades);*/
+			return View();
 		}
 
 		public IActionResult About()
 		{
-			ViewData["Message"] = "Your application description page.";
-
 			return View();
 		}
 
