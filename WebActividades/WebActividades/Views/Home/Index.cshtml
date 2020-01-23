@@ -1,42 +1,8 @@
 ﻿@model IEnumerable<Actividad>
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
-<div>
-	<table>
-		<thead>
-		<tr>
-			<th>Area</th>
-			<th>Institución</th>
-			<th>Titulo</th>
-			<th>Creador</th>
-			<th>Duracion</th>
-			<th>Materiales</th>
-			<th>Resumen</th>
-			<th>Descripción</th>
-			<th>Pautas</th>
-			<th>Naps</th>
-		</tr>		
-		</thead>
-		<tbody>
-			
-				@foreach (Actividad item in Model)
-				{
-					<tr>
-					<td>@item.Area</td>
-					<td>@item.Institucion </td>
-					<td>@item.Titulo</td>
-					<td>@item.Creador </td>
-					<td>@item.Duracion </td>
-					<td>@item.Materiales </td>
-					<td>@item.Resumen </td>
-					<td>@item.Descripcion </td>
-					<td>@item.Pautas </td>
-					<td>@item.Naps </td>
-					</tr>
-				}
-		</tbody>
-	</table>
-</div>
+<h2>HOME</h2>
+
 
